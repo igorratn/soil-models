@@ -32,8 +32,13 @@ mount C ~<br>
 C:<br>
 cd soil-m~1\src<br>
 
-to run the program, once inside DosBox, type in: <br>
+to compile the code, once inside DosBox, type in: <br>
 TURBOS.BAT MKESOL.PAS<br>
-run an example: model tires/71x47-25<br>
+TURBOS.BAT MKEDROW.PAS<br>
+run an example: MODEL.BAT tires/71x47-25<br>
 press any key to continue, or "ESC" to cancel.<br>
+
+the files in tires dir are expected to be in Windows format,
+use can use Sublime text editor to convert from Unix/MacOS to Windows: 
+open a file, View -> Line Endings -> Windows; save the file.
 
