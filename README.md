@@ -22,19 +22,15 @@ This representation is performed by the LineLab (Nf, k) procedure.
 Here Nf is a parameter defining the identifier code of the grid function; k is the number of level lines on the display screen.
 
 software required: DosBox, Turbo Pascal: https://gist.github.com/nvgrw/da00b5d3ac96b9c45c80
-after the installation, you can edit the file (eg for MacOS):
-open -e ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences
-add to the file after the line
-# You can put your MOUNT lines here.
+after the installation, you can edit the DOSBox configuration file (eg for MacOS
+open -e ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences)
+cycles=max
 mount A ~/TP/BIN
 mount C ~
 C:
 cd soil-m~1\src
-
-start DosBox
-to run the program, type in:
+to run the program, run DosBox, then type in:
 TURBOS.BAT MKESOL.PAS #to complie the main module
-#run an example: model tires/71x47-25
-#press any key to continue, or <ESC> to cancel. 
-
+run an example: model tires/71x47-25
+press any key to continue, or <ESC> to cancel.
 
