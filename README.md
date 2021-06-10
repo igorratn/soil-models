@@ -38,7 +38,7 @@ TURBOS.BAT MKEDROW.PAS<br>
 run an example: MODEL.BAT tires/71x47-25<br>
 press any key to continue, or "ESC" to cancel.<br>
 
-the files in tires dir are expected to be in Windows format,
+The files in tires dir are expected to be in Windows format,
 use can use Sublime text editor to convert from Unix/MacOS to Windows: 
 open a file, View -> Line Endings -> Windows; save the file.
 
