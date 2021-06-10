@@ -2,7 +2,7 @@
 The presented mathematical model, together with its software implementation, makes it possible to assess the degree of influence of а vehicle on waterlogged forest soil, depending on the design parameters of the tire and the vertical loads on it.
 The model is developed based on the theory of soil mechanics. The plane problem of compaction of water-saturated anisotropic (in the general case) soil is considered. It was shown that with an instantaneous application of a vertical load, the initial distribution of stress and water pressure in the soil are expressed through their values in a state of complete stabilization. Therefore, it is conventionally assumed that the magnitude of the load does not change before the onset of this state, causing linear (relative to the load) deformations of the soil.
 Thus, first, a plane problem of different modulus of the theory of a linearly deformable medium is solved. This problem is described by a system of partial differential equations. The solution is found by the finite element method with respect to displacements. Then, the steady-state and initial values of the stresses are determined, as well as the values of the maximum deviation of the total stress vector.
-In the case of an isotropic medium, the initial fluid head functionsatisfies the Laplace equation:. The first boundary value problem is posed and solved. Analytical expressions are obtained for the initial values of heads and stresses. With their help, one can select the optimal triangulation of the region for a given loading diagram and check the finite element solution.
+In the case of an isotropic medium, the initial fluid head function satisfies the Laplace equation:. The first boundary value problem is posed and solved. Analytical expressions are obtained for the initial values of heads and stresses. With their help, one can select the optimal triangulation of the region for a given loading diagram and check the finite element solution.
 
 Main software modules:
 MKESol - control module;
@@ -22,15 +22,18 @@ This representation is performed by the LineLab (Nf, k) procedure.
 Here Nf is a parameter defining the identifier code of the grid function; k is the number of level lines on the display screen.
 
 software required: DosBox, Turbo Pascal: https://gist.github.com/nvgrw/da00b5d3ac96b9c45c80
-after the installation, you can edit the DOSBox configuration file (eg for MacOS
-open -e ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences)
-cycles=max
-mount A ~/TP/BIN
-mount C ~
-C:
-cd soil-m~1\src
-to run the program, run DosBox, then type in:
-TURBOS.BAT MKESOL.PAS #to complie the main module
-run an example: model tires/71x47-25
-press any key to continue, or <ESC> to cancel.
+
+after the installation, you can update the DOSBox configuration file (eg. for MacOS
+open -e ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences) with the following:
+<br>
+cycles=max <br>
+mount A ~/TP/BIN<br>
+mount C ~<br>
+C:<br>
+cd soil-m~1\src<br>
+
+to run the program, once inside DosBox, type in: <br>
+TURBOS.BAT MKESOL.PAS<br>
+run an example: model tires/71x47-25<br>
+press any key to continue, or "ESC" to cancel.<br>
 
