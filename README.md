@@ -35,7 +35,7 @@ cd soil-m~1\src<br>
 to compile the code, once inside DosBox, type in: <br>
 TURBOC.BAT MKESOL.PAS<br>
 TURBOC.BAT MKEDROW.PAS<br>
-run an example: MODEL.BAT tires/71x47-25<br>
+run an example: MODEL.BAT tires/71x47-25.WIN<br>
 press any key to continue, or "ESC" to cancel.<br>
 
 The files in tires dir are expected to be in Windows format,
