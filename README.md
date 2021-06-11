@@ -21,8 +21,7 @@ Anal - contains subroutines for graphical representation of a grid function in t
 This representation is performed by the LineLab (Nf, k) procedure.<br> 
 Here Nf is a parameter defining the identifier code of the grid function; k is the number of level lines on the display screen.<br>
 
-software required: DosBox, Turbo Pascal: https://gist.github.com/nvgrw/da00b5d3ac96b9c45c80
-
+software required: DosBox, Turbo Pascal: https://gist.github.com/nvgrw/da00b5d3ac96b9c45c80 <br>
 after the installation, you can update the DOSBox configuration file (eg. for MacOS
 open -e ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences) with the following:
 <br>
@@ -40,7 +39,7 @@ run the examples: <br>
 LAPLAS.EXE tires/71x47-25.WIN<br> 
 press any key to continue, or "ESC" to cancel.<br>
 MODEL.BAT tires/71x47-25.WIN<br>
-
+MKEDROW.BAT tires/71x47-25.WIN<br>
 The files in the tires dir are expected to be in Windows format,
 use can use Sublime text editor to convert from Unix/MacOS to Windows: 
 open a file, View -> Line Endings -> Windows; save the file.
