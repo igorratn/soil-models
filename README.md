@@ -7,12 +7,12 @@ In the case of an isotropic medium, the initial fluid head function satisfies th
 Main software modules:<br>
 MKESol - control module;<br>
 UnCode - contains subroutines for identifying the area of the partition;<br>
-SplinUnt - contains subroutines for constructing an interpolation cubic spline and for outputting spline values at specified points;
+SplinUnt - contains subroutines for constructing an interpolation cubic spline and for outputting spline values at specified points;<br>
 GetSpline - the procedure for forming the global load vector (the right side of the linear algebraic system of equations);<br>
 GetData - procedure for generating a global stiffness matrix;<br>
 LDL - contains routines for decomposition and solutions for strip matrices by the Cholesky method.<br>
 After the MKESol program has been processed, the values of the grid functions from the space that define the vertical and horizontal displacements are known. 
-These values are recorded in the Output.mke file;
+These values are recorded in the Output.mke file;<br>
 MKEDrow - control module for presenting calculation results;<br>
 Sigma - contains programs for calculating mesh functions from a subspace.<br> 
 The initial data is the values of the mesh displacement functions contained in the Output.mke file;<br>
@@ -33,12 +33,15 @@ C:<br>
 cd soil-m~1\src<br>
 
 to compile the code, once inside DosBox, type in: <br>
+TURBOC.BAT LAPLAS.PAS<br>
 TURBOC.BAT MKESOL.PAS<br>
 TURBOC.BAT MKEDROW.PAS<br>
-run an example: MODEL.BAT tires/71x47-25.WIN<br>
+run athe examples: <br>
+LAPLAS.EXE tires/71x47-25.WIN<br> 
 press any key to continue, or "ESC" to cancel.<br>
+MODEL.BAT tires/71x47-25.WIN<br>
+
 
 The files in tires dir are expected to be in Windows format,
 use can use Sublime text editor to convert from Unix/MacOS to Windows: 
 open a file, View -> Line Endings -> Windows; save the file.
-
