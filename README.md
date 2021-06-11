@@ -37,8 +37,8 @@ TURBOC.BAT MKESOL.PAS<br>
 TURBOC.BAT MKEDROW.PAS<br>
 Run the examples: <br>
 LAPLAS.EXE tires/71x47-25.WIN<br>
+Press any key to continue, or "ESC" to cancel.<br>
 The calculation results are presented as level lines of a function of two variables<br>
-press any key to continue, or "ESC" to cancel.<br>
 MODEL.BAT tires/71x47-25.WIN<br>
 MKEDROW.BAT tires/71x47-25.WIN<br>
 The files in the tires dir are expected to be in Windows format,
