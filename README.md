@@ -36,12 +36,11 @@ to compile the code, once inside DosBox, type in: <br>
 TURBOC.BAT LAPLAS.PAS<br>
 TURBOC.BAT MKESOL.PAS<br>
 TURBOC.BAT MKEDROW.PAS<br>
-run athe examples: <br>
+run the examples: <br>
 LAPLAS.EXE tires/71x47-25.WIN<br> 
 press any key to continue, or "ESC" to cancel.<br>
 MODEL.BAT tires/71x47-25.WIN<br>
 
-
-The files in tires dir are expected to be in Windows format,
+The files in the tires dir are expected to be in Windows format,
 use can use Sublime text editor to convert from Unix/MacOS to Windows: 
 open a file, View -> Line Endings -> Windows; save the file.
