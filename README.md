@@ -42,5 +42,5 @@ The calculation results are presented as level lines of a function of two variab
 MODEL.BAT tires/71x47-25.WIN<br>
 MKEDROW.BAT tires/71x47-25.WIN<br>
 The files in the tires dir are expected to be in Windows format,
-use can use Sublime text editor to convert from Unix/MacOS to Windows: 
+you can use Sublime text editor to convert from Unix/MacOS to Windows: 
 open a file, View -> Line Endings -> Windows; save the file.
