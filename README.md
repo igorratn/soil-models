@@ -20,13 +20,13 @@ Here Nf is a parameter defining the identifier code of the grid function; k is t
 
 Software required: DosBox, Turbo Pascal (https://gist.github.com/nvgrw/da00b5d3ac96b9c45c80). <br>
 After the installation, you can update the DOSBox configuration file (eg. for MacOS
-open -e ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences) with the following:
+open -e \~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences) with the following:
 <br>
 cycles=max <br>
-mount A ~/TP/BIN<br>
-mount C ~<br>
-C:<br>
-cd soil-m~1\src<br>
+mount A \~/TP/BIN<br>
+mount C \~<br>
+C\:<br>
+cd soil-m\~1\src<br>
 
 To compile the code, once inside DosBox, type in: <br>
 TURBOC.BAT LAPLAS.PAS<br>
