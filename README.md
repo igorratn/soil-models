@@ -1,8 +1,5 @@
 # soil-models
-This is a software implementation of the model for assessing the degree of influence of а vehicle on waterlogged forest soil, taking into account the design parameters of the tire and the vertical loads on it.
-The model is developed based on the theory of soil mechanics. The plane problem of compaction of water-saturated anisotropic (in the general case) soil is considered. 
-The problem is described by a system of partial differential equations. The solution is found by the finite element method with respect to displacements. Then, the steady-state and initial values of the stresses are determined, as well as the values of the maximum deviation of the total stress vector.
-In the case of an isotropic medium, analytical expressions are obtained for the initial values of heads and stresses. With their help, one can select the optimal triangulation of the region for a given loading diagram and check the finite element solution.
+This is a software implementation of a model for assessing the degree of influence of a vehicle on waterlogged forest soil, taking into account the design parameters of the tire and the vertical loads on it. The model is developed based on the theory of soil mechanics. The plane problem of compaction of water-saturated anisotropic (in the general case) soil is considered. The problem is described by a system of partial differential equations. The solution is found using the finite element method with respect to displacements. Then, the steady-state and initial values of the stresses are determined, as well as the values of the maximum deviation of the total stress vector. In the case of an isotropic medium, analytical expressions are obtained for the initial values of heads and stresses. With their help, one can select the optimal triangulation of the region for a given loading diagram and check the finite element solution.
 
 Main software modules:<br>
 MKESol - control module;<br>
