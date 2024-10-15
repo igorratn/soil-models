@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soil Models</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #dos {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <!-- js-dos style sheet -->
+    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+
+    <!-- js-dos -->
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+</head>
+<body>
+
+    <div id="dos"></div>
+    <!-- Assuming the clickable element is somewhere in your existing HTML or JavaScript -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Initialize js-dos
+            const dos = Dos(document.getElementById("dos"), {
+                url: "turbo-pascal.jsdos",
+            });
+
+            // Use a MutationObserver to detect when the DOM changes
+            const observer = new MutationObserver((mutationsList, observer) => {
+                for (const mutation of mutationsList) {
+                    if (mutation.type === 'childList') {
+                        // Call function to find and click the button after initialization
+                        findAndClickButton();
+                    }
+                }
+            });
+
+            // Start observing the target node for configured mutations
+            observer.observe(document.getElementById("dos"), { childList: true, subtree: true });
+        });
+
+        function findAndClickButton() {
+            // Use a query selector to find the div with a more specific and valid selector
+            const clickableDiv = document.querySelector('div.relative.cursor-pointer');
+            if (clickableDiv) {
+                // Simulate a click on the div
+                clickableDiv.click();
+                // Disconnect the observer once the button is clicked
+                observer.disconnect();
+            } else {
+                // If the div is not found, log a message for debugging
+                console.log('Clickable div not found!');
+            }
+        }
+    </script>
+</body>
+</html>
